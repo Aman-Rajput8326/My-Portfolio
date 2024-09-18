@@ -565,7 +565,7 @@ a {
 .skill-container-right {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 48%;
     position: relative;
     gap: 2rem;
     justify-content: center;
@@ -576,7 +576,7 @@ a {
     font-size: 9em;
     font-style: bold;
     color: rgb(231, 231, 231);
-    bottom: -30.5%;
+    bottom: -33.5%;
     right: 0%;
     user-select: none;
     overflow-y: hidden;
@@ -601,6 +601,7 @@ a {
 .skills-logo {
     width: 90px;
     transition: all 0.5s;
+    height: 80px;
 }
 
 .skills-logo:hover {
