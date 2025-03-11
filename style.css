@@ -177,36 +177,37 @@ a {
 
 .user-image {
     padding: 2.5rem;
-    filter: grayscale(1);
-    transition: all 1s;
-    animation: scaleImage 5s linear infinite;
+  filter: grayscale(1);
+  transition: all 1s;
+  /* animation: scaleImage 1s linear infinite; */
+  /* transition: all 1.5s ease-in-out; */
+  animation: reverseGrayScale 5s infinite;
+
 }
 
 .user-image img {
     z-index: -9;
-    width: 235px;
+    width: 300px;
 }
 
-@keyframes scaleImage {
-
+@keyframes reverseGrayScale {
     0% {
-        filter: grayscale(0);
+        filter: grayscale(1); /* Start in grayscale */
         transform: scale(1);
-
     }
 
     50% {
         transform: scale(1.1);
-        filter: grayscale(1);
+        filter: grayscale(0); /* Remove grayscale */
         box-shadow: 3px 3px 10px black;
     }
 
     100% {
         transform: scale(1);
-        filter: grayscale(0);
+        filter: grayscale(1); /* Return to grayscale */
     }
-
 }
+
 
 
 .icon-dots {
